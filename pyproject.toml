@@ -1,0 +1,15 @@
+[project]
+name = "city-center"
+version = "0.1.0"
+description = "Extract city center coordinates from cityCenter.pdf and export Sheet1/Sheet2 to Excel"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pypdf>=6.9.2",
+]
+
+[dependency-groups]
+dev = [
+    "pylint>=4.0.5",
+]

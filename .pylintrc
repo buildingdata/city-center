@@ -1,0 +1,8 @@
+[MASTER]
+ignore-patterns=
+
+[TYPECHECK]
+ignored-modules=openpyxl,openpyxl.styles,pypdf
+
+[FORMAT]
+max-line-length=100
