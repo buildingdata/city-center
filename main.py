@@ -98,17 +98,17 @@ def format_utm(longitude: float, latitude: float) -> str:
 
 
 def format_lon_boundary(value: int) -> str:
-    """Format a longitude tile boundary using the required east/west prefix."""
+    """Format a longitude tile boundary with a 3-digit absolute value."""
 
     direction = "e" if value >= 0 else "w"
-    return f"{direction}{abs(value)}"
+    return f"{direction}{abs(value):03d}"
 
 
 def format_lat_boundary(value: int) -> str:
-    """Format a latitude tile boundary using the required north/south prefix."""
+    """Format a latitude tile boundary with a 2-digit absolute value."""
 
     direction = "n" if value >= 0 else "s"
-    return f"{direction}{abs(value)}"
+    return f"{direction}{abs(value):02d}"
 
 
 def format_tile(longitude: float, latitude: float) -> str:
